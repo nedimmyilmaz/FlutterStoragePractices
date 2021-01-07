@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_storage_practices/file%20operations.dart';
+import 'package:flutter_storage_practices/sharedPreferences.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,11 +9,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter Storage Ways'),
-          backgroundColor: Colors.deepPurple,
-        ),
-        body: Center(),
+       // body: SharedPreferencesExample(),
+        body: FileOperations(),
       ),
     );
   }
